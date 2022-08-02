@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+}
+
+#title {
+    font-family: Impact;
+    font-size: 100px;
+    position: absolute;
+    top: 140px;
+    left: 438px;
+    animation-name: coffee;
+    animation-duration: 2s;
+}
+
+@keyframes coffee {
+    from {top: -438px;}
+    to {left: 438px;}
+}
+
+#subtitle {
+    font-family: monospace;
+    font-size: 40px;
+    position: absolute;
+    top: 240px;
+    left: 590px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation-name: elixir;
+    animation-duration: 2s;
+}
+
+@keyframes elixir {
+    from {margin-left: 100%;}
+    to {left: 590px;}
+}
+
+#header {
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 60px;
+    position: absolute;
+    top: 1100px;
+    left: 50px;
+}
+
+.div-container {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+  
+.container {
+    position: relative;
+    width: 45%;
+    border-radius: 50%;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 5px;
+    right: -73px;
+    background-color: white;
+    top: 15px;
+    border-radius: 10%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+  
+.right {
+    left: 55%;
+}
+
+.right::after {
+    left: -73px;
+}
+  
+.content {
+    padding: 20px 30px;
+    background-color: #000000;
+    color: #ffffff;
+    border: solid #ffffff;
+    position: relative;
+    border-radius: 6px;
+} 
+
+.content h2 {
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.content p {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#left {
+    text-align: right;
+}
+
+#img-div-2 {
+    transform: rotate(180deg);
+}
+
+.link {
+    font-family: monospace;
+    font-size: 40px;
+    position: absolute;
+    top: 800px;
+    left: 240px;
+}
+
+a {
+    color: #000000;
+}
